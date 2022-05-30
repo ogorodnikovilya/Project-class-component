@@ -1,0 +1,70 @@
+.product {
+  margin: 1rem;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; 
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+  &__block {
+    background: white;
+    width: 85%;
+    padding: 1rem;
+    box-shadow: 1px 5px 2px 0px #a0b8a2;
+  }
+  
+  &__block.clicked {
+    background-color: #5df143;
+  }
+ 
+  &__title {
+    justify-content: center;
+
+    h1 {
+      margin: 0;
+    }
+  }
+  
+  &__cost {
+    margin: 0 0 0 5%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  
+  &__count {
+    margin: 0 4% 0 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  
+  &__icons {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    font-size: 3rem;
+    
+    
+    div {
+      width: 2.5rem;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    p {
+      margin: 0;
+    }    
+  }
+
+  .images {
+    width: 90%;
+  }
+}
